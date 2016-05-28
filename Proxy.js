@@ -1,3 +1,11 @@
+//////////////////////////////////
+// UPlusList        Version:2.2 //
+// Last Modified Time:2016-5-28 //
+// Mail:  BurpSuite@Hotmail.com //
+// Twitter:  Twitter.com/OAuth4 //
+// Github: Github.com/BurpSuite //
+// URL:       http://UPlus7.win //
+//////////////////////////////////
 var BLACK_HOLE = "PROXY 0.0.0.0:80";
 var DIRECT = "DIRECT"
 
@@ -9,137 +17,140 @@ function FindProxyForURL(url, host)
 {
     var u = url.toLowerCase();
     var h = host.toLowerCase();
-//////////////////////////////////
-// UPlusList        Version:2.1 //
-// Last  Modified Time:2016-4-4 //
-// Mail:  BurpSuite@Hotmail.com //
-// Twitter:  twitter.com/OAuth4 //
-// Github: github.com/burpsuite //
-// URL:       http://UPlus7.win //
-//////////////////////////////////
 // $Digit Domain Rule Filter$
+if( d(h, "127.net") ){  return BLACK_HOLE; }
 if( d(h, "168.it168.com") ){  return BLACK_HOLE; }
 if( d(h, "3m.mediav.com") ){  return BLACK_HOLE; }
 if( d(h, "37cs.com") ){  return BLACK_HOLE; }
 if( d(h, "5lyq.com") ){  return BLACK_HOLE; }
+if( d(h, "5y9nfpes.52pk.com") ){  return BLACK_HOLE; }
+if( d(h, "56.itc.cn") ){  return BLACK_HOLE; }
+if( d(h, "51yes.com") ){  return BLACK_HOLE; }
+if( d(h, "50bang.org") ){  return BLACK_HOLE; }
+if( d(h, "51.la") ){  return BLACK_HOLE; }
 if( d(h, "778669.com") ){  return BLACK_HOLE; }
 if( d(h, "801.tianya.cn") ){  return BLACK_HOLE; }
-if( d(h, "5y9nfpes.52pk.com") ){  return BLACK_HOLE; }
 // $A+ Domain Rule Filter$
-if( d(h, "ad.api.3g.youku.com") ){  return BLACK_HOLE; }
-if( d(h, "ad.api.3g.tudou.com") ){  return BLACK_HOLE; }
-if( d(h, "admaster.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "atanx.alicdn.com") ){  return BLACK_HOLE; }
-if( d(h, "ads.data.pplive.com") ){  return BLACK_HOLE; }
-if( d(h, "analytics.techweb.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "ad-brix.com") ){  return BLACK_HOLE; }
+if( d(h, "appcoachs.net") ){  return BLACK_HOLE; }
 if( d(h, "admartzone.com") ){  return BLACK_HOLE; }
+if( d(h, "admaster.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "ana.masky.biddingx.com") ){  return BLACK_HOLE; }
+if( d(h, "acs86.com") ){  return BLACK_HOLE; }
+if( d(h, "adchina.com") ){  return BLACK_HOLE; }
+if( d(h, "adpro.cn") ){  return BLACK_HOLE; }
+if( d(h, "ark.letv.com") ){  return BLACK_HOLE; }
+if( d(h, "adcome.cn") ){  return BLACK_HOLE; }
+if( d(h, "adinfuse.com") ){  return BLACK_HOLE; }
+if( d(h, "admob.com") ){  return BLACK_HOLE; }
+if( d(h, "adsage.cn") ){  return BLACK_HOLE; }
+if( d(h, "adsage.com") ){  return BLACK_HOLE; }
+if( d(h, "adsh.m.taobao.com") ){  return BLACK_HOLE; }
+if( d(h, "adjust.com") ){  return BLACK_HOLE; }
+if( d(h, "adsmogo.org") ){  return BLACK_HOLE; }
+if( d(h, "api.biligame.com") ){  return BLACK_HOLE; }
+if( d(h, "ads.mobclix.com") ){  return BLACK_HOLE; }
+if( d(h, "adview.cn") ){  return BLACK_HOLE; }
+if( d(h, "adwhirl.com") ){  return BLACK_HOLE; }
+if( d(h, "adwo.com") ){  return BLACK_HOLE; }
+if( d(h, "ad.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "adm.leju.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "atm.sina.com") ){  return BLACK_HOLE; }
+if( d(h, "ad.unimhk.com") ){  return BLACK_HOLE; }
+if( d(h, "aduu.cn") ){  return BLACK_HOLE; }
+if( d(h, "advertising.com") ){  return BLACK_HOLE; }
+if( d(h, "adxmi.com") ){  return BLACK_HOLE; }
+if( d(h, "adzerk.net") ){  return BLACK_HOLE; }
+if( d(h, "anquan.org") ){  return BLACK_HOLE; }
+if( d(h, "appads.com") ){  return BLACK_HOLE; }
+if( d(h, "applifier.com") ){  return BLACK_HOLE; }
+if( d(h, "appsflyer.com") ){  return BLACK_HOLE; }
+if( d(h, "alimama.cn") ){  return BLACK_HOLE; }
+if( d(h, "ad.api.3g.tudou.com") ){  return BLACK_HOLE; }
+if( d(h, "adcontrol.tudou.com") ){  return BLACK_HOLE; }
+if( d(h, "ark.letv.com") ){  return BLACK_HOLE; }
 if( d(h, "adtg.widerplanet.com") ){  return BLACK_HOLE; }
 if( d(h, "all.rising.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "asimgs.pplive.cn") ){  return BLACK_HOLE; }
-if( d(h, "aw.kejet.net") ){  return BLACK_HOLE; }
+if( d(h, "agn.aty.sohu.com") ){  return BLACK_HOLE; }
+if( d(h, "adplay.tudou.com") ){  return BLACK_HOLE; }
 if( d(h, "analytics.163.com") ){  return BLACK_HOLE; }
 if( d(h, "api.ad-brix.com") ){  return BLACK_HOLE; }
 if( d(h, "api.amplitude.com") ){  return BLACK_HOLE; }
-if( d(h, "acs86.com") ){  return BLACK_HOLE; }
-if( d(h, "adcome.cn") ){  return BLACK_HOLE; }
 if( d(h, "analytics-union.xunlei.com") ){  return BLACK_HOLE; }
 if( d(h, "adnetworkperformance.com") ){  return BLACK_HOLE; }
+if( d(h, "applovin.com") ){  return BLACK_HOLE; }
 if( d(h, "adgeo.163.com") ){  return BLACK_HOLE; }
-if( d(h, "adinfuse.com") ){  return BLACK_HOLE; }
-if( d(h, "ads.yxdown.com") ){  return BLACK_HOLE; }
-if( d(h, "afp.wasu.cn") ){  return BLACK_HOLE; }
-if( d(h, "adm.funshion.com") ){  return BLACK_HOLE; }
-if( d(h, "afpcreative.wasu.cn") ){  return BLACK_HOLE; }
-if( d(h, "ads.techweb.cn") ){  return BLACK_HOLE; }
-if( d(h, "admartzone.com") ){  return BLACK_HOLE; }
-if( d(h, "ads.data.pplive.com") ){  return BLACK_HOLE; }
-if( d(h, "admaster.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "a.alimama.cn") ){  return BLACK_HOLE; }
-if( d(h, "as.aplus.pptv.com") ){  return BLACK_HOLE; }
-if( d(h, "admob.com") ){  return BLACK_HOLE; }
 if( d(h, "admaster.mobi") ){  return BLACK_HOLE; }
-if( d(h, "a.chartboost.com") ){  return BLACK_HOLE; }
-if( d(h, "adsage.cn") ){  return BLACK_HOLE; }
 if( d(h, "ads.vamaker.com") ){  return BLACK_HOLE; }
-if( d(h, "admaster.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "aid.video.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "allyes.com") ){  return BLACK_HOLE; }
 if( d(h, "ads.mopub.com") ){  return BLACK_HOLE; }
 if( d(h, "api.so.lianmeng.360.cn") ){  return BLACK_HOLE; }
-if( d(h, "agn.aty.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "atanx.alicdn.com") ){  return BLACK_HOLE; }
-if( d(h, "adsage.com") ){  return BLACK_HOLE; }
-if( d(h, "adsmogo.org") ){  return BLACK_HOLE; }
-if( d(h, "ads.mobclix.com") ){  return BLACK_HOLE; }
 if( d(h, "afp.csbew.com") ){  return BLACK_HOLE; }
-if( d(h, "adview.cn") ){  return BLACK_HOLE; }
-if( d(h, "adwhirl.com") ){  return BLACK_HOLE; }
+if( d(h, "ad.api.3g.youku.com") ){  return BLACK_HOLE; }
+if( d(h, "actives.youku.com") ){  return BLACK_HOLE; }
+if( d(h, "atm.youku.com") ){  return BLACK_HOLE; }
 if( d(h, "adm.dxpmedia.com") ){  return BLACK_HOLE; }
 if( d(h, "api.m.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "advimg.ad-mapps.com") ){  return BLACK_HOLE; }
-if( d(h, "adwo.com") ){  return BLACK_HOLE; }
-if( d(h, "adpro.cn") ){  return BLACK_HOLE; }
-if( d(h, "appads.com") ){  return BLACK_HOLE; }
 if( d(h, "ad.xiaomi.com") ){  return BLACK_HOLE; }
 // $B+ Domain Rule Filter$
 if( d(h, "bx.optimix.asia") ){  return BLACK_HOLE; }
 if( d(h, "bshare.optimix.asia") ){  return BLACK_HOLE; }
-if( d(h, "beacon.sina.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "baifendian.com") ){  return BLACK_HOLE; }
 if( d(h, "bs.da.hunantv.com") ){  return BLACK_HOLE; }
 if( d(h, "bbs2.chinaz.com") ){  return BLACK_HOLE; }
 if( d(h, "bdj.tianya.cn") ){  return BLACK_HOLE; }
-if( d(h, ".brand.sogou.com") ){  return BLACK_HOLE; }
+if( d(h, "beacon.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "baidustatic.com") ){  return BLACK_HOLE; }
+if( d(h, "baifendian.com") ){  return BLACK_HOLE; }
+if( d(h, "beacon.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "boss.qzone.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "brand.sogou.com") ){  return BLACK_HOLE; }
 if( d(h, "bdjiaoben.wmxa.cn") ){  return BLACK_HOLE; }
 if( d(h, "bfdcdn.com") ){  return BLACK_HOLE; }
 if( d(h, "baichuan.baidu.com") ){  return BLACK_HOLE; }
-if( d(h, "bshare.optimix.asia") ){  return BLACK_HOLE; }
 if( d(h, "bobo.163.com") ){  return BLACK_HOLE; }
 if( d(h, "biddingx.com") ){  return BLACK_HOLE; }
+if( d(h, "bam.nr-data.net") ){  return BLACK_HOLE; }
 if( d(h, "bxb.oupeng.com") ){  return BLACK_HOLE; }
 // $C+ Domain Rule Filter$
 if( d(h, "cpro.baidustatic.com") ){  return BLACK_HOLE; }
 if( d(h, "ccs.ucweb.com") ){  return BLACK_HOLE; }
+if( d(h, "cnzz.com") ){  return BLACK_HOLE; }
 if( d(h, "cm.pos.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "cm.g.doubleclick.net") ){  return BLACK_HOLE; }
 if( d(h, "cpro.baidu.com") ){  return BLACK_HOLE; }
+if( d(h, "chartboost.com") ){  return BLACK_HOLE; }
 if( d(h, "cpc.brand.sogou.com") ){  return BLACK_HOLE; }
-if( d(h, "cm.zhiziyun.com") ){  return BLACK_HOLE; }
 if( d(h, "cms.laifeng.com") ){  return BLACK_HOLE; }
-if( d(h, "ckm.iqiyi.com") ){  return BLACK_HOLE; }
 if( d(h, "cbjslog.baidu.com") ){  return BLACK_HOLE; }
-if( d(h, "cdn.tanx.com") ){  return BLACK_HOLE; }
-if( d(h, "click2.hd.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "c.wrating.com") ){  return BLACK_HOLE; }
-if( d(h, "chaoliangyun.com") ){  return BLACK_HOLE; }
-if( d(h, "cm.jd.com") ){  return BLACK_HOLE; }
 if( d(h, "cl3.webterren.com") ){  return BLACK_HOLE; }
 if( d(h, "cl.webterren.com") ){  return BLACK_HOLE; }
 if( d(h, "comic.hanhande.com") ){  return BLACK_HOLE; }
-if( d(h, "cifenqi.com") ){  return BLACK_HOLE; }
-if( d(h, "cm.l.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "c.yes.youku.com") ){  return BLACK_HOLE; }
 if( d(h, "comic.52pk.com") ){  return BLACK_HOLE; }
+if( d(h, "cmcore.com") ){  return BLACK_HOLE; }
+if( d(h, "coremetrics.com") ){  return BLACK_HOLE; }
 if( d(h, "cdn.optaim.com") ){  return BLACK_HOLE; }
 if( d(h, "cpro.qqtn.com") ){  return BLACK_HOLE; }
-if( d(h, "cm.suning.com") ){  return BLACK_HOLE; }
-if( d(h, "ra.gtimg.com") ){  return BLACK_HOLE; }
 if( d(h, "c5.72zx.com") ){  return BLACK_HOLE; }
 if( d(h, "cast.ra.icast.cn") ){  return BLACK_HOLE; }
 if( d(h, "cps.laifeng.com") ){  return BLACK_HOLE; }
 if( d(h, "cdn.zampdsp.com") ){  return BLACK_HOLE; }
-if( d(h, "click.aliyun.com") ){  return BLACK_HOLE; }
-if( d(h, "cm.optaim.com") ){  return BLACK_HOLE; }
+if( d(h, "counter.kingsoft.com") ){  return BLACK_HOLE; }
 if( d(h, "cpro.baidu.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "ccc.x.jd.com") ){  return BLACK_HOLE; }
 if( d(h, "c.ns8d.com") ){  return BLACK_HOLE; }
-if( d(h, "click.hd.sohu.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "c.gdt.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "c.l.qq.com") ){  return BLACK_HOLE; }
 if( d(h, "cre.dp.sina.cn") ){  return BLACK_HOLE; }
 if( d(h, "capp.simsimi.com") ){  return BLACK_HOLE; }
-if( d(h, "h5channel.51pgzs.com") ){  return BLACK_HOLE; }
 if( d(h, "cpro.cr173.com") ){  return BLACK_HOLE; }
 if( d(h, "counter.yesky.com") ){  return BLACK_HOLE; }
-if( d(h, "click.hm.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "cdn.vamaker.com") ){  return BLACK_HOLE; }
-if( d(h, "chaoad.com") ){  return BLACK_HOLE; }
+if( d(h, "cnzz.net") ){  return BLACK_HOLE; }
 if( d(h, "cm.dmp.sina.cn") ){  return BLACK_HOLE; }
 if( d(h, "ckmap.mediav.com") ){  return BLACK_HOLE; }
 if( d(h, "cbjs.baidu.com") ){  return BLACK_HOLE; }
@@ -148,26 +159,28 @@ if( d(h, "c.youdao.com") ){  return BLACK_HOLE; }
 if( d(h, "c.bxb.oupeng.com") ){  return BLACK_HOLE; }
 // $D+ Domain Rule Filter$
 if( d(h, "domob.cn") ){  return BLACK_HOLE; }
+if( d(h, "d7.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "dmp.sina.cn") ){  return BLACK_HOLE; }
+if( d(h, "d0.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "data.vod.itc.cn") ){  return BLACK_HOLE; }
+if( d(h, "dj1.baidu.com") ){  return BLACK_HOLE; }
+if( d(h, "d31qbv1cthcecs.cloudfront.net") ){  return BLACK_HOLE; }
+if( d(h, "dxpmedia.com") ){  return BLACK_HOLE; }
+if( d(h, "dsp.youdao.com") ){  return BLACK_HOLE; }
+if( d(h, "dcads.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "de.as.pptv.com") ){  return BLACK_HOLE; }
+if( d(h, "dap.gentags.net") ){  return BLACK_HOLE; }
+if( d(h, "dd.wenwo.com") ){  return BLACK_HOLE; }
+if( d(h, "dev.dc.letv.com") ){  return BLACK_HOLE; }
 if( d(h, "domob.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "domob.org") ){  return BLACK_HOLE; }
 if( d(h, "doubleclick.net") ){  return BLACK_HOLE; }
 if( d(h, "duomeng.cn") ){  return BLACK_HOLE; }
 if( d(h, "duomeng.net") ){  return BLACK_HOLE; }
 if( d(h, "duomeng.org") ){  return BLACK_HOLE; }
-if( d(h, "d7.sina.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "dmp.sina.cn") ){  return BLACK_HOLE; }
-if( d(h, "d0.sina.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "down.xiazai2.net") ){  return BLACK_HOLE; }
-if( d(h, "d31qbv1cthcecs.cloudfront.net") ){  return BLACK_HOLE; }
-if( d(h, "down.xiazaijia.cc") ){  return BLACK_HOLE; }
-if( d(h, "dxpmedia.com") ){  return BLACK_HOLE; }
-if( d(h, "doc100.net") ){  return BLACK_HOLE; }
-if( d(h, "dsp.youdao.com") ){  return BLACK_HOLE; }
-if( d(h, "dap.gentags.net") ){  return BLACK_HOLE; }
 if( d(h, "d1.sina.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "doubleclick.net") ){  return BLACK_HOLE; }
+if( d(h, "dc.letv.com") ){  return BLACK_HOLE; }
 if( d(h, "dsp-impr2.youdao.com") ){  return BLACK_HOLE; }
-if( d(h, "de.as.pptv.com") ){  return BLACK_HOLE; }
 if( d(h, "dup.baidustatic.com") ){  return BLACK_HOLE; }
 // $E+ Domain Rule Filter$
 if( d(h, "eff.inte.sogou.com") ){  return BLACK_HOLE; }
@@ -176,60 +189,59 @@ if( d(h, "en.leturich.org") ){  return BLACK_HOLE; }
 if( d(h, "economy.gmw.cn") ){  return BLACK_HOLE; }
 if( d(h, "eiv.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "e4.6dad.com") ){  return BLACK_HOLE; }
-if( d(h, "ezssp.kejet.net") ){  return BLACK_HOLE; }
+if( d(h, "entry.baidu.com") ){  return BLACK_HOLE; }
+if( d(h, "entrust.net") ){  return BLACK_HOLE; }
 if( d(h, "e-ltvp.inmobi.com") ){  return BLACK_HOLE; }
 // $F+ Domain Rule Filter$
 if( d(h, "fastapi.net") ){  return BLACK_HOLE; }
-if( d(h, "filecdn.72zx.com") ){  return BLACK_HOLE; }
-if( d(h, "ftp-idc.pconline.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "file.market.xiaomi.com") ){  return BLACK_HOLE; }
+if( d(h, "flurry.com") ){  return BLACK_HOLE; }
+if( d(h, "fz.letv.com") ){  return BLACK_HOLE; }
 // $G+ Domain Rule Filter$
+if( d(h, "gdt.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "g.q4ik.com") ){  return BLACK_HOLE; }
 if( d(h, "googleads.g.doubleclick.net") ){  return BLACK_HOLE; }
 if( d(h, "g.doubleclick.net") ){  return BLACK_HOLE; }
 if( d(h, "googleadsserving.cn") ){  return BLACK_HOLE; }
 if( d(h, "googlesyndication.com") ){  return BLACK_HOLE; }
 if( d(h, "google-analytics.com") ){  return BLACK_HOLE; }
-if( d(h, "googlesyndication.com") ){  return BLACK_HOLE; }
 if( d(h, "googleadservices.com") ){  return BLACK_HOLE; }
 if( d(h, "googletagservices.com") ){  return BLACK_HOLE; }
-if( d(h, "googeadsserving.cn") ){  return BLACK_HOLE; }
 if( d(h, "g.fastapi.net") ){  return BLACK_HOLE; }
-if( d(h, "gas.data.pplive.com") ){  return BLACK_HOLE; }
+if( d(h, "googeadsserving.cn") ){  return BLACK_HOLE; }
+if( d(h, "guomob.com") ){  return BLACK_HOLE; }
 if( d(h, "g.cn.miaozhen.com") ){  return BLACK_HOLE; }
-if( d(h, "gdt.qq.com") ){  return BLACK_HOLE; }
-if( d(h, "g.6sfg.com") ){  return BLACK_HOLE; }
 if( d(h, "games.ifeng.com") ){  return BLACK_HOLE; }
 if( d(h, "good.ta80.com") ){  return BLACK_HOLE; }
-if( d(h, "goto.sms.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "gw5.push.mcp.weibo.cn") ){  return BLACK_HOLE; }
+if( d(h, "goto.sms.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "gs.mydown.yesky.com") ){  return BLACK_HOLE; }
-if( d(h, "guomob.com") ){  return BLACK_HOLE; }
 // $H+ Domain Rule Filter$
 if( d(h, "h04.hxsame.hexun.com") ){  return BLACK_HOLE; }
-if( d(h, "html.atm.youku.com") ){  return BLACK_HOLE; }
-if( d(h, "hit.data.pplive.com") ){  return BLACK_HOLE; }
+if( d(h, "h5channel.51pgzs.com") ){  return BLACK_HOLE; }
+if( d(h, "haowj.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "hxsame.hexun.com") ){  return BLACK_HOLE; }
-if( d(h, "haocaitou168.com") ){  return BLACK_HOLE; }
 if( d(h, "hm.baidu.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "hwcdn.net") ){  return BLACK_HOLE; }
 if( d(h, "hm.baidu.com") ){  return BLACK_HOLE; }
 // $I+ Domain Rule Filter$
-if( d(h, "interface.sina.cn") ){  return BLACK_HOLE; }
-if( d(h, "immob.cn") ){  return BLACK_HOLE; }
-if( d(h, "inmobi.com") ){  return BLACK_HOLE; }
 if( d(h, "img.ujian.cc") ){  return BLACK_HOLE; }
-if( d(h, "icon.55bbs.com") ){  return BLACK_HOLE; }
+if( d(h, "i.gdt.qq.com") ){  return BLACK_HOLE; }
 if( d(h, "img.twcczhu.com") ){  return BLACK_HOLE; }
-if( d(h, "irs01.com") ){  return BLACK_HOLE; }
 if( d(h, "impact.applifier.com") ){  return BLACK_HOLE; }
-if( d(h, "imageplus.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "i.w.inmobi.com") ){  return BLACK_HOLE; }
+if( d(h, "inmobi.com") ){  return BLACK_HOLE; }
+if( d(h, "immob.cn") ){  return BLACK_HOLE; }
+if( d(h, "intely.cn") ){  return BLACK_HOLE; }
 if( d(h, "img.wan.sogou.com") ){  return BLACK_HOLE; }
-if( d(h, "i.go.sohu.com") ){  return BLACK_HOLE; }
-if( d(h, "irs01.net") ){  return BLACK_HOLE; }
 if( d(h, "impservice2.youdao.com") ){  return BLACK_HOLE; }
 if( d(h, "imp.optaim.com") ){  return BLACK_HOLE; }
+if( d(h, "i.go.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "inte.sogou.com") ){  return BLACK_HOLE; }
 if( d(h, "itv.hexun.com") ){  return BLACK_HOLE; }
 if( d(h, "img.il8r.com") ){  return BLACK_HOLE; }
+if( d(h, "iwstat.tudou.com") ){  return BLACK_HOLE; }
+if( d(h, "irs01.com") ){  return BLACK_HOLE; }
 if( d(h, "icast.cn") ){  return BLACK_HOLE; }
 if( d(h, "impservice.union.youdao.com") ){  return BLACK_HOLE; }
 if( d(h, "ifashion.ifeng.com") ){  return BLACK_HOLE; }
@@ -238,48 +250,61 @@ if( d(h, "img.users.51.la") ){  return BLACK_HOLE; }
 if( d(h, "i.00oo00.com") ){  return BLACK_HOLE; }
 if( d(h, "imp.ad-plus.cn") ){  return BLACK_HOLE; }
 if( d(h, "img.fd7c.com") ){  return BLACK_HOLE; }
-if( d(h, "int.dpool.sina.com.cn") ){  return BLACK_HOLE; }
 // $J+ Domain Rule Filter$
 if( d(h, "jzt.jd.com") ){  return BLACK_HOLE; }
-if( d(h, "junjichu.net") ){  return BLACK_HOLE; }
 if( d(h, "j.pcpop.com") ){  return BLACK_HOLE; }
-if( d(h, "jp.as.pptv.com") ){  return BLACK_HOLE; }
+if( d(h, "js-agent.newrelic.com") ){  return BLACK_HOLE; }
 if( d(h, "js.51.la") ){  return BLACK_HOLE; }
 if( d(h, "j.qiqiyii.com") ){  return BLACK_HOLE; }
 if( d(h, "js.revsci.net") ){  return BLACK_HOLE; }
 if( d(h, "js.users.51.la") ){  return BLACK_HOLE; }
 // $K+ Domain Rule Filter$
 if( d(h, "k.sinaimg.cn") ){  return BLACK_HOLE; }
+if( d(h, "kejet.net") ){  return BLACK_HOLE; }
+if( d(h, "keytui.com") ){  return BLACK_HOLE; }
 // $L+ Domain Rule Filter$
 if( d(h, "log.mix.sina.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "lstat.youku.com") ){  return BLACK_HOLE; }
+if( d(h, "lvip.youku.com") ){  return BLACK_HOLE; }
 if( d(h, "log.mmstat.com") ){  return BLACK_HOLE; }
 if( d(h, "lzplugin.bshare.cn") ){  return BLACK_HOLE; }
 if( d(h, "lives.l.qq.com") ){  return BLACK_HOLE; }
-if( d(h, "live.chartboost.com") ){  return BLACK_HOLE; }
 if( d(h, "love.bobo.com") ){  return BLACK_HOLE; }
+if( d(h, "livep.l.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "la.gtimg.com") ){  return BLACK_HOLE; }
+if( d(h, "localytics.com") ){  return BLACK_HOLE; }
+if( d(h, "livew.l.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "log.da.hunantv.com") ){  return BLACK_HOLE; }
+if( d(h, "log.v2.hunantv.com") ){  return BLACK_HOLE; }
 // $M+ Domain Rule Filter$
 if( d(h, "mtab.clickmon.co.kr") ){  return BLACK_HOLE; }
 if( d(h, "map.dxpmedia.com") ){  return BLACK_HOLE; }
 if( d(h, "market.xiaomi.com") ){  return BLACK_HOLE; }
-if( d(h, "mmg.aty.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "mega.mlt01.com") ){  return BLACK_HOLE; }
-if( d(h, "m.simba.taobao.com") ){  return BLACK_HOLE; }
-if( d(h, "msg.71.am") ){  return BLACK_HOLE; }
+if( d(h, "m.simaba.taobao.com") ){  return BLACK_HOLE; }
 if( d(h, "mmstat.com") ){  return BLACK_HOLE; }
 if( d(h, "media.tianjimedia.com") ){  return BLACK_HOLE; }
 if( d(h, "media.yesky.com") ){  return BLACK_HOLE; }
-if( d(h, "mapping.yoyi.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "m.sa.sm.cn") ){  return BLACK_HOLE; }
+if( d(h, "madmini.com") ){  return BLACK_HOLE; }
+if( d(h, "mixpanel.com") ){  return BLACK_HOLE; }
+if( d(h, "miaozhen.com") ){  return BLACK_HOLE; }
+if( d(h, "mediav.com") ){  return BLACK_HOLE; }
+if( d(h, "mengmob.com") ){  return BLACK_HOLE; }
+if( d(h, "myhard.com") ){  return BLACK_HOLE; }
+if( d(h, "m.aty.sohu.com") ){  return BLACK_HOLE; }
+if( d(h, "mobads.baidu.com") ){  return BLACK_HOLE; }
+if( d(h, "mobads-logs.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "miaoz.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "m.sogou.com") ){  return BLACK_HOLE; }
 if( d(h, "masky.biddingx.com") ){  return BLACK_HOLE; }
-if( d(h, "mobads.baidu.com") ){  return BLACK_HOLE; }
-if( d(h, "mobads-logs.baidu.com") ){  return BLACK_HOLE; }
+if( d(h, "mmg.aty.sohu.com") ){  return BLACK_HOLE; }
+if( d(h, "mb.hd.sohu.com.cn") ){  return BLACK_HOLE; }
 // $N+ Domain Rule Filter$
-if( d(h, "nvsehui.com") ){  return BLACK_HOLE; }
 if( d(h, "nsclick.baidu.com") ){  return BLACK_HOLE; }
-if( d(h, "null.null.cn") ){  return BLACK_HOLE; }
-if( d(h, "null.null.tw") ){  return BLACK_HOLE; }
+if( d(h, "nstat.tudou.com") ){  return BLACK_HOLE; }
+if( d(h, "n.mark.letv.com") ){  return BLACK_HOLE; }
+if( d(h, "news.l.qq.com") ){  return BLACK_HOLE; }
 // $Q+ Domain Rule Filter$
 if( d(h, "oimageb4.ydstatic.com") ){  return BLACK_HOLE; }
 if( d(h, "ope.tanx.com") ){  return BLACK_HOLE; }
@@ -289,139 +314,166 @@ if( d(h, "optimix.asia") ){  return BLACK_HOLE; }
 // $P+ Domain Rule Filter$
 if( d(h, "pagead2.googlesyndication.com") ){  return BLACK_HOLE; }
 if( d(h, "pos.baidu.com") ){  return BLACK_HOLE; }
+if( d(h, "p.l.qq.com") ){  return BLACK_HOLE; }
 if( d(h, "p.tanx.com") ){  return BLACK_HOLE; }
+if( d(h, "pv.sohu.com") ){  return BLACK_HOLE; }
+if( d(h, "p.l.youku.com") ){  return BLACK_HOLE; }
+if( d(h, "p-log.ykimg.com") ){  return BLACK_HOLE; }
+if( d(h, "p.l.ykimg.com") ){  return BLACK_HOLE; }
 if( d(h, "px.3.cn") ){  return BLACK_HOLE; }
 if( d(h, "pic.fastapi.net") ){  return BLACK_HOLE; }
-if( d(h, "pub.funshion.com") ){  return BLACK_HOLE; }
-if( d(h, "pcs.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "push.zhanzhang.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "pd.brand.sogou.com") ){  return BLACK_HOLE; }
+if( d(h, "pgdt.gtimg.cn") ){  return BLACK_HOLE; }
 if( d(h, "pups.baidu.com") ){  return BLACK_HOLE; }
-if( d(h, "pingtcss.qq.com") ){  return BLACK_HOLE; }
-if( d(h, "pic.fastapi.net") ){  return BLACK_HOLE; }
 if( d(h, "pups.bdimg.com") ){  return BLACK_HOLE; }
+if( d(h, "plog.dc.letv.com") ){  return BLACK_HOLE; }
+if( d(h, "pro.letv.com") ){  return BLACK_HOLE; }
+if( d(h, "pro.hoye.letv.com") ){  return BLACK_HOLE; }
 if( d(h, "p.inte.sogou.com") ){  return BLACK_HOLE; }
-if( d(h, "pv.sohu.com") ){  return BLACK_HOLE; }
-if( d(h, "pv.hd.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "pubads.g.doubleclick.net") ){  return BLACK_HOLE; }
 if( d(h, "partner.googleadservices.com") ){  return BLACK_HOLE; }
+if( d(h, "pixel.wp.com") ){  return BLACK_HOLE; }
 if( d(h, "pv.alert.autohome.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "pgdt.gtimg.cn") ){  return BLACK_HOLE; }
 if( d(h, "pcookie.mlt01.com") ){  return BLACK_HOLE; }
 if( d(h, "profile.ams50.cloudfront.net") ){  return BLACK_HOLE; }
 // $Q+ Domain Rule Filter$
 if( d(h, "quote.tool.hexun.com") ){  return BLACK_HOLE; }
-if( d(h, "qf1.hd.sohu.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "qf.56.com") ){  return BLACK_HOLE; }
+if( d(h, "qtmojo.com") ){  return BLACK_HOLE; }
+if( d(h, "qos.117go.com") ){  return BLACK_HOLE; }
 // $R+ Domain Rule Filter$
 if( d(h, "rtax.criteo.com") ){  return BLACK_HOLE; }
 if( d(h, "ra.icast.cn") ){  return BLACK_HOLE; }
 if( d(h, "rc.jusha.com") ){  return BLACK_HOLE; }
 if( d(h, "rp.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "run.wmxa.cn") ){  return BLACK_HOLE; }
+if( d(h, "r.l.youku.com") ){  return BLACK_HOLE; }
+if( d(h, "ra.gtimg.com") ){  return BLACK_HOLE; }
+if( d(h, "rlog.video.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "r2---sn-ogueln7k.googlevideo.com") ){  return BLACK_HOLE; }
+if( d(h, "r5---sn-ogueln7k.googlevideo.com") ){  return BLACK_HOLE; }
+if( d(h, "r6---sn-nv47lne6.googlevideo.com") ){  return BLACK_HOLE; }
+if( d(h, "r6---sn-q4f7snl6.googlevideo.com") ){  return BLACK_HOLE; }
+if( d(h, "r8---sn-nx57yn76.googlevideo.com") ){  return BLACK_HOLE; }
+if( d(h, "r8---sn-nx57yn7k.googlevideo.com") ){  return BLACK_HOLE; }
+if( d(h, "r12---sn-nx57ynee.googlevideo.com") ){  return BLACK_HOLE; }
+if( d(h, "r12---sn-nx5e6n7d.googlevideo.com") ){  return BLACK_HOLE; }
 if( d(h, "rjs.niuxgame77.com") ){  return BLACK_HOLE; }
 if( d(h, "rd.da.netease.com") ){  return BLACK_HOLE; }
 if( d(h, "rwq.youle55.com") ){  return BLACK_HOLE; }
 if( d(h, "redirect.simba.taobao.com") ){  return BLACK_HOLE; }
-if( d(h, "reachmax.cn") ){  return BLACK_HOLE; }
 if( d(h, "r.bxb.oupeng.com") ){  return BLACK_HOLE; }
 // $S+ Domain Rule Filter$
 if( d(h, "ssl-static.baifendian.com") ){  return BLACK_HOLE; }
-if( d(h, "statis.api.3g.youku.com") ){  return BLACK_HOLE; }
 if( d(h, "su.bdimg.com") ){  return BLACK_HOLE; }
 if( d(h, "ssp.ad.xiaomi.com") ){  return BLACK_HOLE; }
 if( d(h, "static.googleadsserving.cn") ){  return BLACK_HOLE; }
 if( d(h, "static1.bfdcdn.com") ){  return BLACK_HOLE; }
 if( d(h, "show.xiazai8844.net") ){  return BLACK_HOLE; }
+if( d(h, "static.lstat.youku.com") ){  return BLACK_HOLE; }
+if( d(h, "sax.sina.cn") ){  return BLACK_HOLE; }
+if( d(h, "sax.sina.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "stuff.cdn.biddingx.com") ){  return BLACK_HOLE; }
-if( d(h, "sr.symcd.com") ){  return BLACK_HOLE; }
+if( d(h, "s.youtube.com") ){  return BLACK_HOLE; }
 if( d(h, "show.qqabcd8899.cn") ){  return BLACK_HOLE; }
 if( d(h, "s.0311zs.net") ){  return BLACK_HOLE; }
-if( d(h, "sdk.yunfan.com") ){  return BLACK_HOLE; }
-if( d(h, "show.re.taobao.com") ){  return BLACK_HOLE; }
+if( d(h, "smartadserver.com") ){  return BLACK_HOLE; }
+if( d(h, "sax.sina.cn") ){  return BLACK_HOLE; }
+if( d(h, "stat.letv.com") ){  return BLACK_HOLE; }
+if( d(h, "sp.qf.56.com") ){  return BLACK_HOLE; }
 if( d(h, "static.applifier.com") ){  return BLACK_HOLE; }
 if( d(h, "ssl.google-analytics.com") ){  return BLACK_HOLE; }
-if( d(h, "sax.sina.cn") ){  return BLACK_HOLE; }
-if( d(h, "s.0318-7979111.com") ){  return BLACK_HOLE; }
+if( d(h, "stat.tudou.com") ){  return BLACK_HOLE; }
+if( d(h, "stat.youku.com") ){  return BLACK_HOLE; }
+if( d(h, "stats.tudou.com") ){  return BLACK_HOLE; }
 if( d(h, "slog.sina.cn") ){  return BLACK_HOLE; }
 if( d(h, "static.mediav.com") ){  return BLACK_HOLE; }
+if( d(h, "sp1.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "s1.adm.72zx.com") ){  return BLACK_HOLE; }
 if( d(h, "sohu.ad-plus.cn") ){  return BLACK_HOLE; }
 if( d(h, "s.13328888882.com") ){  return BLACK_HOLE; }
 if( d(h, "static-ssl.mediav.com") ){  return BLACK_HOLE; }
-if( d(h, "sandai.net") ){  return BLACK_HOLE; }
-if( d(h, "mediav.com") ){  return BLACK_HOLE; }
 if( d(h, "show.58dtpf.com") ){  return BLACK_HOLE; }
-if( d(h, "score.my.tv.sohu.com") ){  return BLACK_HOLE; }
-if( d(h, "s.go.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "sohu.wrating.com") ){  return BLACK_HOLE; }
 if( d(h, "show.pipi7788.com") ){  return BLACK_HOLE; }
-if( d(h, "static.atm.youku.com") ){  return BLACK_HOLE; }
 if( d(h, "show-a.mediav.com") ){  return BLACK_HOLE; }
+if( d(h, "stat.m.jd.com") ){  return BLACK_HOLE; }
 if( d(h, "statics.motu.pagechoice.net") ){  return BLACK_HOLE; }
-if( d(h, "su.bdimg.com") ){  return BLACK_HOLE; }
 if( d(h, "so.hexun.com") ){  return BLACK_HOLE; }
 if( d(h, "s.cr-nielsen.com") ){  return BLACK_HOLE; }
+if( d(h, "score.my.tv.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "sdkapp.mobile.sina.cn") ){  return BLACK_HOLE; }
 if( d(h, "s.csbew.com") ){  return BLACK_HOLE; }
-if( d(h, "show.58dtpf.com") ){  return BLACK_HOLE; }
+if( d(h, "scorecardresearch.com") ){  return BLACK_HOLE; }
 if( d(h, "s.lianmeng.360.cn") ){  return BLACK_HOLE; }
 if( d(h, "stat.lianmeng.360.cn") ){  return BLACK_HOLE; }
 if( d(h, "so.lianmeng.360.cn") ){  return BLACK_HOLE; }
 if( d(h, "shared.ydstatic.com") ){  return BLACK_HOLE; }
-if( d(h, "smartadserver.com") ){  return BLACK_HOLE; }
+if( d(h, "s.go.sohu.com") ){  return BLACK_HOLE; }
 if( d(h, "shared.youdao.com") ){  return BLACK_HOLE; }
 if( d(h, "static.bshare.cn") ){  return BLACK_HOLE; }
 // $T+ Domain Rule Filter$
+if( d(h, "tanx.com") ){  return BLACK_HOLE; }
+if( d(h, "telemetryverification.net") ){  return BLACK_HOLE; }
+if( d(h, "tongji.linezing.com") ){  return BLACK_HOLE; }
+if( d(h, "tiqcdn.com") ){  return BLACK_HOLE; }
+if( d(h, "tapjoyads.com") ){  return BLACK_HOLE; }
 if( d(h, "tpc.googlesyndication.com") ){  return BLACK_HOLE; }
 if( d(h, "track.ra.icast.cn") ){  return BLACK_HOLE; }
 if( d(h, "tui1999.com") ){  return BLACK_HOLE; }
+if( d(h, "t.l.qq.com") ){  return BLACK_HOLE; }
+if( d(h, "tjs.sjs.sinajs.cn") ){  return BLACK_HOLE; }
 if( d(h, "tg.1155t.cn") ){  return BLACK_HOLE; }
-if( d(h, "test.stat.yunfancdn.com") ){  return BLACK_HOLE; }
-if( d(h, "tk.pk060.com") ){  return BLACK_HOLE; }
-if( d(h, "tajs.qq.com") ){  return BLACK_HOLE; }
-if( d(h, "tg.602.com") ){  return BLACK_HOLE; }
-if( d(h, "tapjoyads.com") ){  return BLACK_HOLE; }
+if( d(h, "tcss.qq.com") ){  return BLACK_HOLE; }
 // $U+ Domain Rule Filter$
-if( d(h, "umeng.co") ){  return BLACK_HOLE; }
+if( d(h, "umsns.com") ){  return BLACK_HOLE; }
 if( d(h, "umeng.com") ){  return BLACK_HOLE; }
+if( d(h, "umtrack.com") ){  return BLACK_HOLE; }
+if( d(h, "umeng.co") ){  return BLACK_HOLE; }
+if( d(h, "umeng.net") ){  return BLACK_HOLE; }
+if( d(h, "ushaqi.com") ){  return BLACK_HOLE; }
+if( d(h, "union.xunlei.com") ){  return BLACK_HOLE; }
+if( d(h, "uyunad.com") ){  return BLACK_HOLE; }
 if( d(h, "utrack.hexun.com") ){  return BLACK_HOLE; }
 if( d(h, "u291014.778669.com") ){  return BLACK_HOLE; }
 if( d(h, "union.youdao.com") ){  return BLACK_HOLE; }
 if( d(h, "u.cjlaoshi.com") ){  return BLACK_HOLE; }
 if( d(h, "u349036.778669.com") ){  return BLACK_HOLE; }
-if( d(h, "url.downxia.com") ){  return BLACK_HOLE; }
-if( d(h, "url.goosai.com") ){  return BLACK_HOLE; }
-if( d(h, "umtrack.com") ){  return BLACK_HOLE; }
-if( d(h, "uyunad.com") ){  return BLACK_HOLE; }
 if( d(h, "u1.img.mobile.sina.cn") ){  return BLACK_HOLE; }
-if( d(h, "url.d9soft.com") ){  return BLACK_HOLE; }
 // $V+ Domain Rule Filter$
 if( d(h, "v.admaster.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "video.mpush.qq.com") ){  return BLACK_HOLE; }
 if( d(h, "vip.yule8.net") ){  return BLACK_HOLE; }
-if( d(h, "vod.fp.qq.com") ){  return BLACK_HOLE; }
 if( d(h, "vqq.admaster.com.cn") ){  return BLACK_HOLE; }
-if( d(h, "v.aty.sohu.com") ){  return BLACK_HOLE; }
-if( d(h, "v.chartboost.com") ){  return BLACK_HOLE; }
 if( d(h, "vipp.rwjfs.com") ){  return BLACK_HOLE; }
-if( d(h, "viidii.info") ){  return BLACK_HOLE; }
+if( d(h, "v2.log.hunantv.com") ){  return BLACK_HOLE; }
 if( d(h, "v1.ujian.cc") ){  return BLACK_HOLE; }
 if( d(h, "vgdtimg.cn") ){  return BLACK_HOLE; }
+if( d(h, "v.gdt.qq.com") ){  return BLACK_HOLE; }
 // $W+ Domain Rule Filter$
 if( d(h, "webterren.com") ){  return BLACK_HOLE; }
-if( d(h, "www.googletagservices.com") ){  return BLACK_HOLE; }
+if( d(h, "wuxian.fd.zol-img.com.cn") ){  return BLACK_HOLE; }
 if( d(h, "wn.pos.baidu.com") ){  return BLACK_HOLE; }
+if( d(h, "wrating.com") ){  return BLACK_HOLE; }
+if( d(h, "waps.cn") ){  return BLACK_HOLE; }
+if( d(h, "wa.gtimg.com") ){  return BLACK_HOLE; }
+if( d(h, "wiyun.com") ){  return BLACK_HOLE; }
+if( d(h, "wooboo.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "wqmobile.com") ){  return BLACK_HOLE; }
 if( d(h, "wmdeal.qtmojo.com") ){  return BLACK_HOLE; }
-if( d(h, "web.data.pplive.com") ){  return BLACK_HOLE; }
-if( d(h, "www.google-analytics.com") ){  return BLACK_HOLE; }
-if( d(h, "wa.wisedsp.net") ){  return BLACK_HOLE; }
 // $X+ Domain Rule Filter$
+if( d(h, "xs.houyi.baofeng.net") ){  return BLACK_HOLE; }
+if( d(h, "x.da.hunantv.com") ){  return BLACK_HOLE; }
 if( d(h, "x.jd.com") ){  return BLACK_HOLE; }
 // $Y+ Domain Rule Filter$
 if( d(h, "ydstatic.com") ){  return BLACK_HOLE; }
 if( d(h, "youmi.net") ){  return BLACK_HOLE; }
+if( d(h, "yes1.feng.com") ){  return BLACK_HOLE; }
 // $Z+ Domain Rule Filter$
 if( d(h, "znsv.baidu.com") ){  return BLACK_HOLE; }
 if( d(h, "zdw.w8.com.cn") ){  return BLACK_HOLE; }
+if( d(h, "zhiziyun.com") ){  return BLACK_HOLE; }
 if( d(h, "zhongxinghuanyu.com") ){  return BLACK_HOLE; }
 // $Wildcard Domain Rule Filter$
 if( d(h, ".alimama.cn") ){  return BLACK_HOLE; }
@@ -451,11 +503,15 @@ if( ( d(h, "") && s(u, "*alls_top.js*") ) || d(h, "Domain.in") ){ return BLACK_H
 if( ( d(h, "") && s(u, "*wrating.js*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 if( ( d(h, "") && s(u, "*cpro.js*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 if( ( d(h, "") && s(u, "*crawler.js*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
+if( ( d(h, "") && s(u, "adAudit.min.js") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 // $All Domain Path Rule Filter$
 if( ( d(h, "") && s(u, "*/pos/*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 if( ( d(h, "") && s(u, "*/videos*other/*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
-//
-//
+if( ( d(h, "") && s(u, "cpro/ui") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
+if( ( d(h, "") && s(u, "videos/other") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
+if( ( d(h, "") && s(u, "d/js/m") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
+if( ( d(h, "") && s(u, "tool_img") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
+if( ( d(h, "") && s(u, "eapi/ad/get") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 // $Wildcard Path Domain Rule Filter$
 if( ( d(h, ".cache.netease.com") && s(u, "*/share/**") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 if( ( d(h, ".yuehui.163.com") && s(u, "*mail*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
@@ -794,7 +850,7 @@ if( ( d(h, "stats.chinaz.com") && s(u, "*/newshome*code.js") ) || d(h, "Domain.i
 if( ( d(h, "chinaz.com") && s(u, "*/js*new.js") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 /////////////////////////////////////
 // $Viedo Site Domain Rule Filter$ //
-// $Last Modified  Time:2016-2-17$ //
+// $Last Modified  Time:2016-5-28$ //
 /////////////////////////////////////
 // $http://www.youku.com$
 if( ( d(h, "static.youku.com") && s(u, "***/js*youku_laifeng_v6.js") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
@@ -814,6 +870,7 @@ if( ( d(h, "p.l.ykimg.com") && s(u, "*ykp2pdata*") ) || d(h, "Domain.in") ){ ret
 if( ( d(h, "r.l.youku.com") && s(u, "*rec_ad_show*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 if( ( d(h, "valb.atm.youku.com") && s(u, "*vb*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 if( ( d(h, "m.yes.youku.com") && s(u, "*vs.gif*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
+if( ( d(h, "static.youku.com") && s(u, "index/js/ikuAdapterNew.js") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 // $http://v.qq.com$
 if( ( d(h, "games.qq.com") && s(u, "*playgame*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
 if( ( d(h, "l.qq.com") && s(u, "*lview*") ) || d(h, "Domain.in") ){ return BLACK_HOLE;}
