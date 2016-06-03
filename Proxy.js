@@ -1,6 +1,6 @@
 //////////////////////////////////
-// UPlusList        Version:2.2 //
-// Last Modified Time:2016-5-28 //
+// UPlusList        Version:2.3 //
+// Last Modified Time:2016-6-30 //
 // Mail:  BurpSuite@Hotmail.com //
 // Twitter:  Twitter.com/OAuth4 //
 // Github: Github.com/BurpSuite //
