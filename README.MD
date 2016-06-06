@@ -1,10 +1,10 @@
-###UPlus Proxy ÊÇÒ»¿î ¹ã¸æÀ¹½ØPAC
->UPlus For Proxy ÓÉ Eval Î¬»¤
->>¸üÐÂ¼ÇÂ¼:  
+###UPlus Proxy æ˜¯ä¸€æ¬¾ å¹¿å‘Šæ‹¦æˆªPAC
+>UPlus Of Proxy ç”± Eval ç»´æŠ¤
+>>æ›´æ–°è®°å½•:  
 ```
-Version2.3: 1.ÐÞÕý"iOS9"°²×°ºóÎÞÐ§ÎÊÌâ2.¸üÐÂÊ±¼ä:2016-6-03 15:26
-Version2.2: 1.Í¬²½¸üÐÂ×îÐÂ¹ã¸æÀ¹½Ø¹æÔò2.¸üÐÂÊ±¼ä:2016-5-28 13:08
-Version1.2: 1.Í£Ö¹Î¬»¤UPlus Proxy ÏîÄ¿
-Version1.1: 1.¼ÓÈë´óÁ¿¹ã¸æÀ¹½Ø¹æÔòÍøÖ·2.ÓÅ»¯PAC ÔËÐÐÊ±À¹½ØµÄÐÔÄÜ
-Version1.0: 1.¼ÓÈë»ù±¾¹ã¸æÀ¹½ØÄ¬ÈÏ¹¦ÄÜ
+Version2.3: 1.ä¿®æ­£"iOS9"å®‰è£…åŽæ— æ•ˆé—®é¢˜2.æ›´æ–°æ—¶é—´:2016-6-03 15:26
+Version2.2: 1.åŒæ­¥æ›´æ–°æœ€æ–°å¹¿å‘Šæ‹¦æˆªè§„åˆ™2.æ›´æ–°æ—¶é—´:2016-5-28 13:08
+Version1.2: 1.åœæ­¢ç»´æŠ¤UPlus Proxy é¡¹ç›®
+Version1.1: 1.åŠ å…¥å¤§é‡å¹¿å‘Šæ‹¦æˆªè§„åˆ™ç½‘å€2.ä¼˜åŒ–PAC è¿è¡Œæ—¶æ‹¦æˆªçš„æ€§èƒ½
+Version1.0: 1.åŠ å…¥åŸºæœ¬å¹¿å‘Šæ‹¦æˆªé»˜è®¤åŠŸèƒ½
 ```
